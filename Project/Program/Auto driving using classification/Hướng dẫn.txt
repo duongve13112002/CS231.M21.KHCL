@@ -1,0 +1,24 @@
+Đồ án của em có thể áp dụng với mọi game sử dụng WASD để điều khiển
+
+- Để có thể chạy được đồ án thì cần phải cài đặt các thư viện trong file "requirements.txt"
++ Cài đặt nhanh các thư viện đó :
+Bước 1 : Chạy cmd và ưa đường dẫn tới thư mục chứa file có tên là "requirements.txt" 
+Bước 2 : Chạy câu lệnh "pip install -r requirements.txt"
+
+- Để train cho 1 game :
+Bước 1 : Mở game cần thu nhập dữ liệu (game phải để chế độ "Windowed mode")
+Bước 2 : Chạy cmd và đưa đường dẫn tới thư mục chứa file có tên là "Collect_data.py"
+Bước 3 : Chạy câu lệnh "python Collect_data.py" trong cmd và nhấn enter để thu nhập dữ liệu
+Bước 4 : Sau đó điều khiển game (lưu ý :  phím Caps lock phải được bật)
+(Muốn tạm dừng thu nhập data thì ta nhấn phím 'T' và muốn kết thúc quá trình thu nhập data nhấn phím 'E')
+Bước 5 : Sau khi thu nhập dữ liệu ta vào thư mục "data" sau đó nhấn chạy file "balance_data.py" để cần bằng dữ liệu
+Bước 6 : Sau đó ta chạy file "train_model.py" để train model
+
+- Để cho python chơi game (lưu ý phải có model) ta thực hiện các bước sau:
+Bước 1 : Mở game ( Không được "run as administrator" cho ứng dụng, game phải để chế độ "Windowed mode" và phím Caps lock phải được bật ) 
+Bước 2 : Chạy cmd và đưa đường dẫn tới thư mục chứa file có tên là "test_model.py"
+Bước 3 : Chạy câu lệnh "python test_model.py" để model chơi game 
+(Muốn tạm dừng model chạy thì ta nhấn phím 'T' và muốn kết thúc model chạy nhấn phím 'E')
+
+
+-Model trong đồ án này em áp dụng cho tựa game "Grand Theft Auto San Andreas" 
